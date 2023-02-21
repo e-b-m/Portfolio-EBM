@@ -1,6 +1,15 @@
+.logo {
+    display: flex;
+    justify-content: center;
+}
 
- 
 .navBarElements {
     display: flex;
     justify-content: center;
 }  
+
+.navBar {
+    font-family: 'Dosis', sans-serif;
+
+
+}

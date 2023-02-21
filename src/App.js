@@ -10,6 +10,10 @@ import Projects from './components/Projects';
 function App() {
   return (
     <main className="main" >
+      <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;800&display=swap" rel="stylesheet"/>
+
       <Navbar/>
       <About/>
       <Projects/>

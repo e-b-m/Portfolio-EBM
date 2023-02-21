@@ -1,22 +1,50 @@
-import React from 'react'; 
-import '../stylesheets/Navbar.css'
+import { Link } from "react-router-dom";
+import React from "react";
+import "../stylesheets/Navbar.css";
 
 const Navbar = () => {
-    return (
+  return (
     <div>
-        <img alt="TransparentLogo" src="https://user-images.githubusercontent.com/116574907/220334583-f453f994-8bfd-4506-a6b1-0e943e3c3a20.png" height="200" align="center"/>
+      <style className="font">
+        {" "}
+        @import
+        url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+      </style>
+      <Link to='/'>
+        <img
+          src={require("/logoTransparent.png")}
+          alt="Logo"
+          className="logo"
+        />
+      </Link>
+      <nav className="navBar">
+        <img
+          className="logo"
+          alt="TransparentLogo"
+          src="public/logoTransparent.png"
+          height="200"
+          align="center"
+        />
         {/* <h1>Em Codes</h1> */}
-        <div className='navBarElements'>
-        <ul>
-            <li>About</li>
-            <li>Projects</li>
-            <li>Skills</li>
-        </ul>
+        <div className="navBarElements">
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/about">About</Link>
+            </li>
+            <li>
+              <Link to="/projects</li>">Projects</Link>
+            </li>
+            <li>
+              <Link to="/skills">Skills</Link>
+            </li>
+          </ul>
         </div>
-    
-    
-    </div>  );
-}
- 
-export default Navbar;
+      </nav>
+    </div>
+  );
+};
 
+export default Navbar;
