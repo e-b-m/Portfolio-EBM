@@ -12,7 +12,7 @@ const Navbar = () => {
       </style>
       <Link to='/'>
         <img
-          src={require("/logoTransparent.png")}
+          src= {require("./logoTransparent.png")} 
           alt="Logo"
           className="logo"
         />
@@ -21,11 +21,10 @@ const Navbar = () => {
         <img
           className="logo"
           alt="TransparentLogo"
-          src="public/logoTransparent.png"
+          src="./logoTransparent.png"
           height="200"
           align="center"
         />
-        {/* <h1>Em Codes</h1> */}
         <div className="navBarElements">
           <ul>
             <li>
@@ -35,7 +34,7 @@ const Navbar = () => {
               <Link to="/about">About</Link>
             </li>
             <li>
-              <Link to="/projects</li>">Projects</Link>
+              <Link to="/projects">Projects</Link>
             </li>
             <li>
               <Link to="/skills">Skills</Link>

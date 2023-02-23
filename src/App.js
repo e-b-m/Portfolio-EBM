@@ -6,21 +6,35 @@ import Contact from './components/Contact'
 import Navbar from './components/Navbar';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
+import Footer from './components/Footer'; 
+import Home from './components/Home'
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+
 
 function App() {
   return (
     <main className="main" >
-      <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;800&display=swap" rel="stylesheet"/>
-
-      <Navbar/>
-      <About/>
-      <Projects/>
-      <Skills />
-      <Contact/> 
+    <BrowserRouter>
+    <div className="App">
+    <Navbar/>
+    <Routes>
+      <Route path="/" element={<Home/>}/>
+      <Route path="/about" element={<About/>}/>
+      <Route path="/skills" element={<Skills/>}/>
+      <Route path="/contact" element={<Contact/>}/>      
+      <Route path="/projects" element={<Projects/>}/>      
+    </Routes>
+    <Footer/>
+    </div>
+    </BrowserRouter>
     </main>
   );
 }
 
 export default App;
+
+
+{/* <About/>
+      <Projects/>
+      <Skills />
+      <Contact/>  */}
