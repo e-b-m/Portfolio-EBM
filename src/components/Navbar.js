@@ -18,13 +18,6 @@ const Navbar = () => {
         />
       </Link>
       <nav className="navBar">
-        <img
-          className="logo"
-          alt="TransparentLogo"
-          src="./logoTransparent.png"
-          height="200"
-          align="center"
-        />
         <div className="navBarElements">
           <ul>
             <li>
