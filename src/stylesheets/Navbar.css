@@ -13,5 +13,23 @@
     display: inline-block;
     justify-content: center;
 
-
 }
+
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+.nav {
+    font-family: inherit;
+}
+
+a {
+    text-decoration: none;
+    
+    }
+    
+li {
+    list-style: none;
+    }
