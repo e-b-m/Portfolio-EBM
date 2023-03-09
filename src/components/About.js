@@ -6,7 +6,7 @@ const About = () => {
     <section id= "about">
         <div className="aboutContainer">
         <h1 className="text-3xl font-bold underline">
-        Emma Bayley-Melendez Portfolio
+            Welcome to my portfolio!
         </h1>
         </div>
     

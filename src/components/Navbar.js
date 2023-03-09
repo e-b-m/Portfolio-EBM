@@ -10,13 +10,7 @@ const Navbar = () => {
         @import
         url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
       </style>
-      <Link to='/'>
-        <img
-          src= {require("./logoTransparent.png")} 
-          alt="Logo"
-          className="logo"
-        />
-      </Link>
+    
       <nav className="navBar">
         <div className="navBarElements">
           <ul>
@@ -28,6 +22,12 @@ const Navbar = () => {
             </li>
             <li>
               <Link to="/projects">Projects</Link>
+             <ul className="dropdown">
+              <li><a href="/">Bite of History</a></li>
+              <li><a href="/">Back-end Project: Best Bytes</a></li>
+              <li><a href="/">Front-end Project: SoundStage</a></li>
+              <li><a href="/">Full-stack Project: Orbit</a></li>  
+            </ul> 
             </li>
             <li>
               <Link to="/skills">Skills</Link>
@@ -35,6 +35,13 @@ const Navbar = () => {
           </ul>
         </div>
       </nav>
+      <Link to='/'>
+        <img
+          src= {require("./logoTransparent.png")} 
+          alt="Logo"
+          className="logo"
+        />
+      </Link>
     </div>
   );
 };

@@ -3,13 +3,15 @@
     justify-content: center;
 }
 
-.navBarElements {
-    display: flex;
+/* .navBarElements {
+    display: inline-block;
     justify-content: center;
-}  
+}   */
 
 .navBar {
     font-family: 'Dosis', sans-serif;
+    display: inline-block;
+    justify-content: center;
 
 
 }
