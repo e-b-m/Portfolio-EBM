@@ -13,6 +13,7 @@ const Navbar = () => {
       <div className="logo">
         <Link to="/">
           <img
+            className="logo"
             src={require("./logoTransparent.png")}
             alt="Logo"
             width="200"
