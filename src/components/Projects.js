@@ -1,8 +1,7 @@
-import React from 'react'; 
-
+import React from "react";
 
 const Projects = () => {
-    return (  <></>);
-}
- 
+  return <></>;
+};
+
 export default Projects;
