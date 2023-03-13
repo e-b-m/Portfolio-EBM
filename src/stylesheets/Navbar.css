@@ -16,7 +16,7 @@
     background-color: rgb(255, 222, 254);
     color: black;
     box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23);
-    margin-left: auto;
+    margin: auto;
 }
 
 .dropdown {
@@ -33,6 +33,7 @@ a {
     display: block;
     width: 100%;
     display: inline-block;
+    margin: auto;
     }
     
 li {
