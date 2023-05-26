@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import React from 'react'; 
-import './App.css';
+import './App.scss';
 import About from './components/About'
 import Contact from './components/Contact'
 import Navbar from './components/Navbar';
