@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import React from "react";
 import "../stylesheets/Navbar.css";
+import Logo from "src/components/Logo.png"; 
 
 const Navbar = () => {
   return (
@@ -14,7 +15,7 @@ const Navbar = () => {
         <Link to="/">
           <img
             className="logo"
-            src={require("./logoTransparent.png")}
+            src={require("src/components/Logo.png")}
             alt="Logo"
             width="200"
             height="200"
